@@ -78,7 +78,7 @@
             <div class="col-md-6 col-lg-3">
                 <a href="https://github.com/jgalazka/SB_publications/tree/main" class="card shadow p-3 text-decoration-none text-dark h-100 bg-light">
                     <h5 class="card-title text-primary">608 Space Biology Publications</h5>
-                    <img src="608.jpg" class="img-fluid card-img-top-custom">
+                    <img src="IMG-20251005-WA0017.jpg" class="img-fluid card-img-top-custom">
                     <p class="card-text"><small>This resource provides links to access 608 full-text space biology publications. Open the .csv file to see titles.</small></p>
                 </a>
             </div>
@@ -86,7 +86,7 @@
             <div class="col-md-6 col-lg-3">
                 <a href="osdr_data.html" class="card shadow p-3 text-decoration-none text-dark h-100 bg-light">
                     <h5 class="card-title text-warning">Open Science Data Repository</h5>
-                    <img src="osdr.jpeg" class="img-fluid card-img-top-custom">
+                    <img src="IMG-20251005-WA0016.jpg" class="img-fluid card-img-top-custom">
                     <p class="card-text"><small>The NASA Open Science Data Repository (OSDR) provides access to data from over 500 biological experiments either performed in space, or in support of space exploration.</small></p>
                 </a>
             </div>
@@ -94,14 +94,14 @@
             <div class="col-md-6 col-lg-3">
                 <a href="https://taskbook.nasaprs.com/tbp/welcome.cfm" class="card shadow p-3 text-decoration-none text-dark h-100 bg-light">
                     <h5 class="card-title text-danger"> Task Book</h5>
-                    <img src="task book.jpeg" class="img-fluid card-img-top-custom">
+                    <img src="IMG-20251005-WA0015.jpg" class="img-fluid card-img-top-custom">
                     <p class="card-text"><small>The NASA Task Book is an online database of research projects supported by NASA's Biological and Physical Sciences (BPS) Division and Human Research Program (HRP). Users can view project descriptions, annual progress, final reports, and bibliographical listings of publications resulting from NASA-funded studies in Space Biology, Physical Sciences, and Human Research. Visitors can also learn about the potential impact of these studies and the anticipated benefits that such research could offer to us on Earth.</small></p>
                 </a>
             </div>
 	    <div class="col-md-6 col-lg-3">
                 <a href="ai_summary.html" class="card shadow p-4 text-decoration-none text-dark h-100 bg-light">
                     <h5 class="card-title text-success">Scholarcy Tool</h5>
-                    <img src="ai.jpeg" class="img-fluid card-img-top-custom">
+                    <img src="IMG-20251005-WA0012.jpg" class="img-fluid card-img-top-custom">
                     <p class="card-text"><small>Run analysis and generate knowledge graphs.</small></p>
                 </a>
             </div>
@@ -117,4 +117,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
+
+			
