@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summary Tool | QueryLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .nasa-logo {
+            width: 40px; 
+            height: 40px;
+            background-color: #000080; 
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%; 
+            margin-right: 10px;
+            display: inline-block;
+        }
+        #graph-visualization-area {
+            min-height: 450px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #adb5bd;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <div class="nasa-logo">NASA</div>
+            <a class="navbar-brand me-auto" href="index.html">QueryLab Home</a>
+            <a href="publications_list.html" class="btn btn-secondary">Browse 608 Publications</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1 class="display-4 text-success">🤖 AI Internet Summary Tool</h1>
+                <p class="lead text-muted">Instantly summarize key concepts and retrieve related images directly from the internet.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card shadow-lg p-4 h-100 bg-white">
+                    <h5 class="card-title text-success mb-3">1. Enter Search Term</h5>
+                    <form id="analysis-form">
+                        <div class="mb-3">
+                            <label for="search-query" class="form-label">Topic or Keyword:</label>
+                            <input type="text" class="form-control" id="search-query" 
+                                placeholder="e.g., Martian colonization challenges" required>
+                            <div class="form-text">This will search the internet for a summary and a relevant image.</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success w-100" id="analyze-btn">
+                            <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+                            Analyze & Search Internet
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="card shadow-lg p-4 h-100">
+                    <h5 class="card-title text-success mb-3">2. Analysis Results & Visualization</h5>
+                    
+                    <div id="ai-summary-output" class="mb-4 p-3 border rounded">
+                        <p class="text-secondary">Search results will be summarized here.</p>
+                    </div>
+
+                    <div id="graph-visualization-area">
+                        <p class="text-muted mb-3">Relevant image/visualization from the internet will load here.</p>
+                        <img src="https://via.placeholder.com/600x300?text=SEARCH+RESULTS+VISUALIZATION" 
+                             class="img-fluid rounded shadow-sm" 
+                             alt="Search Visualization Placeholder"
+                             style="max-width: 90%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">A QueryLab for the searching data</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script> 
+</body>
+</html>

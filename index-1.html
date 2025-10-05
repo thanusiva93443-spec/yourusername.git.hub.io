@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .nasa-logo {
+            width: 40px; 
+            height: 40px;
+            background-color: #000080; /* NASA Blue */
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%; 
+            margin-right: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <div class="solar_gang">SOLAR_GANG</div>
+            
+            <a class="navbar-brand me-5" href="#">
+                <h1 class="h3 mb-0 text-info">QueryLab</h1>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="osdr_data.html">
+                            NASA Open Science Data Repository
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="publications_list.html">
+                            A list of 608 full-text open-access Space Biology publications
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nasa_task_book.html">
+                             Task Book
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ai_summary.html">
+                            Scholarcy Tool
+                        </a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search publications/keywords..." aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="alert alert-primary text-center shadow-sm" role="alert">
+            <h4 class="alert-heading">Welcome to QueryLab!</h4>
+            <p>Your AI-powered tool for summarizing and exploring space bioscience research data.</p>
+        </div>
+
+        <div class="row text-center mt-5 g-3">
+            <div class="col-md-6 col-lg-3">
+                <a href="https://github.com/jgalazka/SB_publications/tree/main" class="card shadow p-3 text-decoration-none text-dark h-100 bg-light">
+                    <h5 class="card-title text-primary">608 Space Biology Publications</h5>
+                    <img src="608.jpg" class="img-fluid card-img-top-custom">
+                    <p class="card-text"><small>This resource provides links to access 608 full-text space biology publications. Open the .csv file to see titles.</small></p>
+                </a>
+            </div>
+             
+            <div class="col-md-6 col-lg-3">
+                <a href="osdr_data.html" class="card shadow p-3 text-decoration-none text-dark h-100 bg-light">
+                    <h5 class="card-title text-warning">Open Science Data Repository</h5>
+                    <img src="osdr.jpeg" class="img-fluid card-img-top-custom">
+                    <p class="card-text"><small>The NASA Open Science Data Repository (OSDR) provides access to data from over 500 biological experiments either performed in space, or in support of space exploration.</small></p>
+                </a>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <a href="https://taskbook.nasaprs.com/tbp/welcome.cfm" class="card shadow p-3 text-decoration-none text-dark h-100 bg-light">
+                    <h5 class="card-title text-danger"> Task Book</h5>
+                    <img src="task book.jpeg" class="img-fluid card-img-top-custom">
+                    <p class="card-text"><small>The NASA Task Book is an online database of research projects supported by NASA's Biological and Physical Sciences (BPS) Division and Human Research Program (HRP). Users can view project descriptions, annual progress, final reports, and bibliographical listings of publications resulting from NASA-funded studies in Space Biology, Physical Sciences, and Human Research. Visitors can also learn about the potential impact of these studies and the anticipated benefits that such research could offer to us on Earth.</small></p>
+                </a>
+            </div>
+	    <div class="col-md-6 col-lg-3">
+                <a href="ai_summary.html" class="card shadow p-4 text-decoration-none text-dark h-100 bg-light">
+                    <h5 class="card-title text-success">Scholarcy Tool</h5>
+                    <img src="ai.jpeg" class="img-fluid card-img-top-custom">
+                    <p class="card-text"><small>Run analysis and generate knowledge graphs.</small></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">A QueryLab for the searching the data </span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
